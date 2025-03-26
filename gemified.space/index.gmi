@@ -1,0 +1,23 @@
+```
+ ██████  ███████ ███    ███ ██ ███████ ██ ███████ ██████     ███████ ██████   █████   ██████ ███████ 
+██       ██      ████  ████ ██ ██      ██ ██      ██   ██    ██      ██   ██ ██   ██ ██      ██      
+██   ███ █████   ██ ████ ██ ██ █████   ██ █████   ██   ██    ███████ ██████  ███████ ██      █████   
+██    ██ ██      ██  ██  ██ ██ ██      ██ ██      ██   ██         ██ ██      ██   ██ ██      ██      
+ ██████  ███████ ██      ██ ██ ██      ██ ███████ ██████  ██ ███████ ██      ██   ██  ██████ ███████ 
+```
+
+# Capsule Map
+=> gemini://gemified.space/gemlog/ My Gemlog
+
+## About
+
+My name is Brian. I'm a husband, father to four daughters, long-time Linux enthusiast, 
+Software Architect, private pilot, photographer, HAM (KO6HNR), and US Army veteran.
+
+I enjoy creating and using Free and Open Source software and gravitate toward minimalistic interfaces.
+I also enjoy my gadgets, retro gaming, and DIY electronics projects.
+
+This capsule is hosted in a container running on a Raspberry Pi Zero 2 W in my home office.
+
+### Gemini Info
+=> gemini://geminiprotocol.net
