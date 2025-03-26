@@ -1,5 +1,5 @@
 # gemified.space
-[![Container Repository on Quay](https://quay.io/repository/darthlukan/agate/status "Docker Repository on Quay")](https://quay.io/repository/darthlukan/agate)
+[![Container Repository on Quay](https://quay.io/repository/darthlukan/agate/status "Container Repository on Quay")](https://quay.io/repository/darthlukan/agate)
 
 > Author: Brian Tomlinson <darthlukan at gmail dot com>
 
