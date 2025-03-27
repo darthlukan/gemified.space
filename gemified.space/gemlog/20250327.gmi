@@ -1,3 +1,4 @@
+=> gemini://gemified.space gemified.space Home
 => gemini://gemified.space/gemlog/index.gmi My Gemlog
 
 ## Hello World!
