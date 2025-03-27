@@ -10,4 +10,4 @@
 => gemini://gemified.space/gemlog/20250327.gmi Hello World!
 
 ## Home
-=> gemini://gemified.space
+=> gemini://gemified.space gemified.space
