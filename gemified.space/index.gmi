@@ -20,4 +20,4 @@ I also enjoy my gadgets, retro gaming, and DIY electronics projects.
 This capsule is hosted in a container running on a Raspberry Pi Zero 2 W in my home office.
 
 ### Gemini Info
-=> gemini://geminiprotocol.net
+=> gemini://geminiprotocol.net geminiprotocol.net
