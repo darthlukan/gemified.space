@@ -1,0 +1,11 @@
+=> gemini://gemified.space/gemlog/ My Gemlog
+
+## Hello World!
+
+On this 27th day of the month of March in the year of our lord 2025 did the
+gemified.space capsule become available to the denizens of Gemini Space.
+
+Whether or not that is deemed a good thing remains to be seen.
+
+Tailwinds and 72
+- Brian
