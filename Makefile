@@ -22,4 +22,5 @@ run:
 
 .PHONY: clean
 clean:
+	podman rm $$(podman ps -a | grep 'Exited' | awk '{print $$1}')
 	podman rmi $$(podman images | grep '<none>' | awk '{print $$3}')
