@@ -1,0 +1,42 @@
+=> gemini://gemified.space gemified.space Home
+=> gemini://gemified.space/gemlog/index.gmi My Gemlog
+
+# Oddities in Hosting a Capsule
+
+Something that's been bugging me a little about running this capsule on a 
+Raspberry Pi Zero 2 W: It's slower than I would think. I mean, Gemini is a pretty simple
+protocol with a minimal spec for its primary content, gemtext, and this capsule doesn't
+have a ton to it, so why would it be slow?
+
+The RPi Zero 2 on paper has enough compute and memory to run a simple server well enough,
+I mean, I use a RPi Zero 2 in order to run MainsailOS with a full-on web ui for
+Mainsail and Klipper in order to drive my 3D printer, so a simple Gemini Capsule should be
+mostly trivial, right? Well... maybe not.
+
+Thinking I was slightly clever, I figured I'd page Agate into a container and that would save
+me from having to install the rust toolchain and dependencies in order to build from source.
+I would instead just install Podman, git, and copy over some certificates; clone my
+capsule repo to the RPi Zero 2, and run the container. It turns out, the RPi Zero 2 doesn't 
+"Like" to run containers, especially large ones. It takes 5 whole minutes to start the
+container, and then when it is started, the performance is... abysmal. I'm met with
+I/O Timeouts, which is really interesting given how lightweight my content and the Gemini protocol
+are.
+
+What surprised me even more was that even when using the Agate pre-compiled binary from the
+upstream GitHub repository, the performance is better, but still prone to I/O Timeouts when
+navigating to my capsule from another machine. I think the hint may very well be in the error
+message: "I/O Timeout". The Amfora client I use has a timeout of 10 seconds set. I know for a
+fact that the network speed going from my home network out to Cloudflare and then back to my
+home network and into my RPi Zero 2 W is plenty fast. So something else must be going on.
+
+When I check the actual resource consumption on the Pi, it's as expected - Almost non-existent.
+So... what gives? I think the problem is possibly slow file access. Perhaps the cheap 32GB micro
+SDCard I'm using is just not very fast? I still think that's a bit of a reach, but in the
+absence of anything obvious, that may be a place to start. Thankfully, I have several
+micro SDCards, so ought to be able to verify my hypothesis pretty easily.
+
+It's a frustrating problem, but is hopefully easily rectified with a little experimentation.
+
+
+Tailwinds and 72
+- Brian
