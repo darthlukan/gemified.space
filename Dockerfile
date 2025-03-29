@@ -16,4 +16,6 @@ EXPOSE 1965
 VOLUME /gemified.space/
 VOLUME /certs/
 
-ENTRYPOINT ["/usr/bin/agate", "--addr", "0.0.0.0:1965", "--content", "/gemified.space/", "--certs", "/certs/", "--hostname", "gemified.space"]
+ENV RUST_LOG=debug
+
+ENTRYPOINT ["/usr/bin/agate", "--addr", "0.0.0.0:1965", "--content", "/gemified.space/", "--certs", "/certs/"]
