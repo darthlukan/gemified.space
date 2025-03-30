@@ -7,7 +7,7 @@
 ```
 
 # Capsule Map
-=> gemini://gemified.space/gemlog/index.gmi My Gemlog
+=> gemlog/index.gmi My Gemlog
 
 ## About
 

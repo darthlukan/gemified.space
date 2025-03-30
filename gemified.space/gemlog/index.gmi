@@ -7,8 +7,8 @@
 ```
 
 # Posts
-=> gemini://gemified.space/gemlog/20250328.gmi 28 March 2025 - Oddities in Hosting a Capsule
-=> gemini://gemified.space/gemlog/20250327.gmi 27 March 2025 - Hello World!
+=> 20250328.gmi 28 March 2025 - Oddities in Hosting a Capsule
+=> 20250327.gmi 27 March 2025 - Hello World!
 
 ## Home
 => gemini://gemified.space gemified.space
