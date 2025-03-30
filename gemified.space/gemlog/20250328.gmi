@@ -1,5 +1,5 @@
-=> gemini://gemified.space gemified.space Home
-=> gemini://gemified.space/gemlog/index.gmi My Gemlog
+=> ../index.gmi gemified.space Home
+=> ./index.gmi My Gemlog
 
 # Oddities in Hosting a Capsule
 
