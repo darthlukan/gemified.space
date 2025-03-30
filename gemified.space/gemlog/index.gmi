@@ -11,4 +11,4 @@
 => 20250327.gmi 27 March 2025 - Hello World!
 
 ## Home
-=> gemini://gemified.space gemified.space
+=> ../index.gmi gemified.space
