@@ -6,7 +6,7 @@
  ██████  ███████ ██      ██ ██ ██      ██ ███████ ██████  ██ ███████ ██      ██   ██  ██████ ███████ 
 ```
 
-# Capsule Map
+## Capsule Map
 => gemlog/index.gmi My Gemlog
 
 ## About
@@ -19,5 +19,6 @@ I also enjoy my gadgets, retro gaming, and DIY electronics projects.
 
 This capsule is hosted in a container running on a Raspberry Pi Zero 2 W in my home office.
 
-### Gemini Info
+### Resources on Gemini
 => gemini://geminiprotocol.net geminiprotocol.net
+=> gemini://kennedy.gemi.dev Kennedy Search Engine
