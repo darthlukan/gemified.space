@@ -7,6 +7,7 @@
 ```
 
 # Posts
+=> 20250410.gmi 10 April 2025 - DNS was the problem
 => 20250330.gmi 30 March 2025 - It's working, I think
 => 20250328.gmi 28 March 2025 - Oddities in Hosting a Capsule
 => 20250327.gmi 27 March 2025 - Hello World!
