@@ -6,9 +6,6 @@
  ██████  ███████ ██      ██ ██ ██      ██ ███████ ██████  ██ ███████ ██      ██   ██  ██████ ███████ 
 ```
 
-## Capsule Map
-=> gemlog/index.gmi My Gemlog
-
 ## About
 
 My name is Brian. I'm a husband, father to four daughters, long-time Linux enthusiast, 
@@ -18,6 +15,10 @@ I enjoy creating and using Free and Open Source software and gravitate toward mi
 I also enjoy my gadgets, retro gaming, and DIY electronics projects.
 
 This capsule is hosted in a container running on a Raspberry Pi Zero 2 W in my home office.
+
+## Capsule Info
+=> gemlog/index.gmi My Gemlog
+=> gemini://kennedy.gemi.dev/site-search/s/gemified.space/ Search this capsule
 
 ### Resources on Gemini
 => gemini://geminiprotocol.net geminiprotocol.net
