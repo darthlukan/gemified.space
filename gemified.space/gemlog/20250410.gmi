@@ -1,0 +1,65 @@
+=> ../index.gmi gemified.space Home
+=> ./index.gmi My Gemlog
+
+# DNS was the problem
+
+Last time I was lamenting the problem with running Agate on my Raspberry Pi Zero 2W and not understanding how such
+a low-resource server and protocol were struggling to serve Gemini content even from within my local network. It
+turns out, the problem was DNS.
+
+=> 20250330.gmi My last post on this topic "It's working, I think"
+
+## What did I do this time?
+
+After some thought, I realized that my capsule appearing to struggle to serve content was just yet another symptom of 
+a deeper problem I had been ignoring - My network was horribly slow.
+
+I conducted the most basic research into what all was going on within my network, which hosts 40+ devices inclusive of
+lightbulbs, door locks, and the usual home networking suspects, and realized the DNS latency was atrocious. My ISP's
+default DNS servers must be pointing to potatoes. I set my router to use Cloudflare Families DNS which have IPv4
+addresses of 1.1.1.2 and 1.0.0.2 for malware blocking and things got better, but it wasn't enough. I was still seeing
+tons more DNS queries than I expected.
+
+### Pi-Hole
+
+=> https://pi-hole.net pi-hole [https]
+
+In order to get a handle on all of the DNS queries and to take advantage of some ad blocking goodness, I decided to
+repurpoes a couple more Rasperry Pi Zero 2Ws as Pi-Hole DNS servers for my network. It took all of a few minutes to get
+those re-imaged with a headless 64-bit Raspberry Pi OS and install Pi-Hole and get it configured. After I set the custom
+DNS provider setting on my router to point to the two Pi-Holes, I immediately saw a drop in latency of response when
+hitting pages from a browser.
+
+I fired up `amfora` and pointed it to my domain - The results were much better, but still slow, and definitely not
+impervious to the "I/O Timeout" problem. I still had a problem somewhere.
+
+### Cloudflare
+
+It goes without saying, but Cloudflare is a great provider if you're serving web pages and applications on anything
+related to HTTP(s). However, the defaults leave a lot to be desired for serving anything on Gemini.
+
+I turned off almost every feature that was meant for optimizing HTTP/s and within a few minutes saw an awesome
+improvement in getting to my gemini capsule over the internet. In `amfora` I was getting almost instant responses most
+of the time, and waited about 1 - 2 seconds all of the other times, well within the 5 second window for getting that
+"I/O Timeout" error.
+
+### Sometimes it takes cash
+
+While all of the above helped a ton and did result in mostly stable responses from my capsule, I realized that it had
+been 4 years since I switched to a 1Gbps fiber connection. I also learned that my ISP was running a promotion for 
+an upgrade to 5Gbps for around $90 USD/month for 12 months. Since I had been out of the promotional pricing for the 
+1Gbps service for 3 years, that 5Gbps promotion was $40 USD/month less than what I was currently paying! I jumped on
+that and once I got it all configured, there is almost no latency in accessing my capsule from the internet.
+
+## Parting thoughts
+
+I could probably continue to further optimize things - Go crazy with block lists for Pi-Hole, throw more hardware behind
+my Router, set up some VLANs, or even make an attempt at writing a faster Gemini Server. The thing is, I think it's 
+"Good enough" now. I've got a decent amount of ad blocking present, my network is cleaner, and I've got a ton more
+bandwidth coming into the house. Most importantly, my original goal of getting my Gemini Capsule consistently serving
+content quickly has been achieved. I think I'll stick with it for a while longer before peeking down the rabbit-hole of
+further optimization.
+
+
+Tailwinds and 72
+- Brian
